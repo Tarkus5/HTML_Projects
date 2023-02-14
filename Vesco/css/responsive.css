@@ -1,0 +1,182 @@
+/*===========================================================
+                    RESPONSIVE DESIGN
+=============================================================*/
+/* Media Queries per large devices (>1200px, desktop e laptop) */
+@media (min-width: 1200px) {
+  /* Niente da fare qui perché il responsive già funziona */
+}
+
+/* Media Queries per medium devices (>992px ma <1200px, tablet orizzontali e desktop medi) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Styling del mobile menu (principalmente sfondo e spazi) */
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0;
+  }
+  /* Allineati gli elementi del menu a sinistra */
+  .navbar-nav {
+    float: left;
+  }
+  /* Rimosso il padding a dx e sx dell'intero menu */
+  .vesco-nav-wrapper {
+    padding: 0;
+  }
+}
+
+/* Media Queries per small devices (768>px ma <991px, tablet verticali e desktop piccoli) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styling del mobile menu (principalmente sfondo e spazi) */
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0;
+  }
+
+  /* Allineati gli elementi del menu a sinistra */
+  .navbar-nav {
+    float: left;
+  }
+
+  /* Rimosso il padding a dx e sx dell'intero menu */
+  .vesco-nav-wrapper {
+    padding: 0;
+  }
+
+  /* Modifichiamo la sezione about - rimuoviamo l'immagine in diagonale e la mettiamo in fullwidth */
+  #about-bg-diagonal {
+    border-left: 0;
+    border-top: 0;
+    width: 100%;
+    height: 350px;
+  }
+
+  #about-content-box {
+    width: 100%;
+    height: 350px;
+  }
+
+  /* Modifichiamo la sezione stat */
+  .stats-item {
+    padding: 20px 0;
+  }
+
+  /* Modifichiamo le info sotto al footer */
+  #footer-copyrights {
+    text-align: center;
+  }
+}
+
+/* Media Queries per extra-small devices (<768px, smartphone e tablet verticali) */
+@media (max-width: 767px) {
+  /* Styling del mobile menu (principalmente sfondo e spazi) */
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0;
+  }
+
+  /* Allineati gli elementi del menu a sinistra */
+  .navbar-nav {
+    float: left;
+  }
+
+  /* Rimosso il padding a dx e sx dell'intero menu */
+  .vesco-nav-wrapper {
+    padding: 0;
+  }
+
+  /* Sistemiamo il font della heading in ATF */
+  #home-heading h3 {
+    font-size: 24px;
+  }
+
+  /* Sistemiamo la dimensione dei bottoni nell'intera pagina */
+  .btn-general {
+    padding: 6px 22px;
+    font-size: 14px;
+  }
+
+  /* Modifichiamo la sezione about - rimuoviamo l'immagine in diagonale e la mettiamo in fullwidth */
+  #about-bg-diagonal {
+    border-left: 0;
+    border-top: 0;
+    width: 100%;
+    height: 350px;
+  }
+
+  #about-content-box {
+    width: 100%;
+    height: 350px;
+  }
+
+  /* Modifichiamo la dimensione delle immagini nella sezione Work */
+  .img-wrapper img {
+    min-width: 100%;
+  }
+
+  /* Modifichiamo la sezione Testimonials */
+  .testimonial blockquote {
+    padding: 6px 50px;
+  }
+
+  .testimonial blockquote:before {
+    left: 10px;
+  }
+
+  .testimonial blockquote:after {
+    right: 10px;
+  }
+
+  .testimonial blockquote p {
+    font-size: 14px;
+  }
+
+  /* Modifichiamo la sezione stat */
+  .stats-item {
+    padding: 20px 0;
+  }
+
+  /* Modifichiamo le info sotto al footer */
+  #footer-copyrights {
+    text-align: center;
+  }
+}
+
+/* Media Queries per extra-small devices (<480px, smartphone in orizzontale) */
+@media (max-width: 480px) {
+  /* Niente da fare, eredita tutte le proprietà dagli xs devices scritta sopra */
+}
+
+/* Media Queries per extra-small devices (<320px, vecchi telefoni) */
+@media (max-width: 320px) {
+  /* Sistemiamo la sezione Services, andando a diminuire la dimensione delle icone e modificando la dimensione del font*/
+  .service-item-icon i {
+    width: 58px;
+    height: 58px;
+    padding: 7px;
+  }
+
+  .service-item-title h3 {
+    font-size: 17px;
+  }
+
+  /* Aumentiamo lo spazio tra il titolo della sezione About e l'immagine */
+  #about-content-box {
+    margin-top: 40px;
+  }
+
+  /* Sistemiamo la sezione Testimonials */
+  .testimonial img {
+    max-width: 80px;
+  }
+
+  .testimonial blockquote {
+    padding: 6px 30px;
+  }
+
+  .testimonial blockquote:before {
+    left: 7px;
+  }
+
+  .testimonial blockquote:after {
+    right: 7px;
+  }
+}
